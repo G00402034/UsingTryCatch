@@ -2,8 +2,13 @@ package ie.atu;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class UsingTryCatch {
+    public static void main(String[] args) {
+        KeepGoing();
+    }
 
-    public static void main(String[] args){
+    public static void KeepGoing()
+    {
+
     try
 
     {
@@ -15,6 +20,7 @@ public class UsingTryCatch {
         }
         else {
             System.out.println("Not a valid number");
+            KeepGoing();
         }
 
         }
@@ -24,7 +30,7 @@ public class UsingTryCatch {
 
     {
         System.out.println("Error caught");
-
+        KeepGoing();
     }
     }
 
