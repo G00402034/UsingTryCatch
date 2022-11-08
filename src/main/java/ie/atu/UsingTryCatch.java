@@ -3,10 +3,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class UsingTryCatch {
     public static void main(String[] args) {
-        KeepGoing();
+        keepGoing();
     }
 
-    public static void KeepGoing()
+    public static void keepGoing()
     {
 
     try
@@ -20,7 +20,7 @@ public class UsingTryCatch {
         }
         else {
             System.out.println("Not a valid number");
-            KeepGoing();
+            keepGoing();
         }
 
         }
@@ -30,7 +30,7 @@ public class UsingTryCatch {
 
     {
         System.out.println("Error caught");
-        KeepGoing();
+        keepGoing();
     }
     }
 
